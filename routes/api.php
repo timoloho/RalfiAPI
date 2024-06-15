@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\BmwController;
+use App\Http\Controllers\DiscController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -9,9 +9,9 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 
-Route::get('/bmw', [BmwController::class, 'index']);
-Route::post('/bmw', [BmwController::class, 'store']);
-Route::get('/bmw/{bmw}', [BmwController::class, 'show']);
-Route::put('/bmw/{bmw}', [BmwController::class, 'update']);
-Route::delete('/bmw/{bmw}', [BmwController::class, 'destroy']);
+Route::get('/disc', [DiscController::class, 'index']);
+Route::post('/disc', [DiscController::class, 'store']);
+Route::get('/disc/{disc}', [DiscController::class, 'show']);
+Route::put('/disc/{disc}', [DiscController::class, 'update']);
+Route::delete('/disc/{disc}', [DiscController::class, 'destroy']);
 
